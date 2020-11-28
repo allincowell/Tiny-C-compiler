@@ -1,0 +1,90 @@
+_________________________________________________________________________________
+Generated Quads for the program
+  0 : param	_0
+  1 : t000	=	call printStr, 1
+  2 : param	_1
+  3 : t001	=	call printStr, 1
+  4 : t002	=	1
+  5 : err	=	t002
+  6 : t003	=	& err
+  7 : param	t003
+  8 : t004	=	call readInt, 1
+  9 : n	=	t004
+ 10 : t005	=	t004
+ 11 : t006	=	0
+ 12 : ans	=	t006
+ 13 : t007	=	0
+ 14 : if  n >t007	goto 17
+ 15 : goto 29
+ 16 : goto 29
+ 17 : t008	=	10
+ 18 : t009	=	ans * t008
+ 19 : t010	=	10
+ 20 : t011	=	n % t010
+ 21 : t012	=	t009 + t011
+ 22 : ans	=	t012
+ 23 : t013	=	t012
+ 24 : t014	=	10
+ 25 : t015	=	n / t014
+ 26 : n	=	t015
+ 27 : t016	=	t015
+ 28 : goto 13
+ 29 : param	_2
+ 30 : t017	=	call printStr, 1
+ 31 : param	ans
+ 32 : t018	=	call printInt, 1
+ 33 : param	_3
+ 34 : t019	=	call printStr, 1
+ 35 : param	_4
+ 36 : t020	=	call printStr, 1
+ 37 : t021	=	0
+ 38 : return	t021
+_________________________________________________________________________________
+Symbol table for the Program
+____________________________________________ Global ____________________________________________
+Offset = 0
+Start Quad Index = 0
+End Quad Index =  0
+Name	Value	var_type	size	Offset	Type
+
+printInt	null	func		0	-1	ptr-to-St( Global )int
+readInt	null	func		0	-1	ptr-to-St( Global )int
+printStr	null	func		0	-1	ptr-to-St( Global )int
+main	null	func		0	-1	ptr-to-St( main )int
+
+x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
+_________________________________________________________________________________
+____________________________________________ main ____________________________________________
+Offset = -104
+Start Quad Index = 0
+End Quad Index =  38
+Name	Value	var_type	size	Offset	Type
+
+retVal	null	return		4	0	int
+n	null	local		4	-4	int
+t000	null	temp		4	-8	int
+t001	null	temp		4	-12	int
+err	1	local		4	-16	int
+t002	1	temp		4	-20	int
+t003	null	temp		8	-28	ptr(int)
+t004	null	temp		4	-32	int
+t005	null	temp		4	-36	int
+ans	0	local		4	-40	int
+t006	0	temp		4	-44	int
+t007	0	temp		4	-48	int
+t008	10	temp		4	-52	int
+t009	null	temp		4	-56	int
+t010	10	temp		4	-60	int
+t011	null	temp		4	-64	int
+t012	null	temp		4	-68	int
+t013	null	temp		4	-72	int
+t014	10	temp		4	-76	int
+t015	null	temp		4	-80	int
+t016	null	temp		4	-84	int
+t017	null	temp		4	-88	int
+t018	null	temp		4	-92	int
+t019	null	temp		4	-96	int
+t020	null	temp		4	-100	int
+t021	0	temp		4	-104	int
+
+x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x

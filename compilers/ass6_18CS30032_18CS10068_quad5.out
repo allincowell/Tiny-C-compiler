@@ -1,0 +1,229 @@
+_________________________________________________________________________________
+Generated Quads for the program
+  0 : if  a >b	goto 3
+  1 : goto 5
+  2 : goto 7
+  3 : return	a
+  4 : goto -1
+  5 : return	b
+  6 : goto -1
+  7 : t000	=	100
+  8 : t001	=	0
+  9 : t002	=	0
+ 10 : t004	=	t002 * 4
+ 11 : t003	=	t001 + t004
+ 12 : t005	=	0
+ 13 : dp[t003]	=	t005
+ 14 : t006	=	t005
+ 15 : t007	=	1
+ 16 : i	=	t007
+ 17 : t008	=	t007
+ 18 : if  i <=n	goto 24
+ 19 : goto 59
+ 20 : goto 59
+ 21 : t009	=	i
+ 22 : i	=	i + 1
+ 23 : goto 18
+ 24 : t010	=	0
+ 25 : cur	=	t010
+ 26 : t011	=	0
+ 27 : j	=	t011
+ 28 : t012	=	t011
+ 29 : if  j <i	goto 35
+ 30 : goto 53
+ 31 : goto 53
+ 32 : t013	=	j
+ 33 : j	=	j + 1
+ 34 : goto 29
+ 35 : t014	=	0
+ 36 : t016	=	j * 4
+ 37 : t015	=	t014 + t016
+ 38 : t017	=	p[t015]
+ 39 : t018	=	0
+ 40 : t019	=	i - j
+ 41 : t020	=	1
+ 42 : t021	=	t019 - t020
+ 43 : t023	=	t021 * 4
+ 44 : t022	=	t018 + t023
+ 45 : t024	=	dp[t022]
+ 46 : t025	=	t017 + t024
+ 47 : param	cur
+ 48 : param	t025
+ 49 : t026	=	call max, 2
+ 50 : cur	=	t026
+ 51 : t027	=	t026
+ 52 : goto 32
+ 53 : t028	=	0
+ 54 : t030	=	i * 4
+ 55 : t029	=	t028 + t030
+ 56 : dp[t029]	=	cur
+ 57 : t031	=	cur
+ 58 : goto 21
+ 59 : t032	=	0
+ 60 : t034	=	n * 4
+ 61 : t033	=	t032 + t034
+ 62 : t035	=	dp[t033]
+ 63 : return	t035
+ 64 : t036	=	1
+ 65 : err	=	t036
+ 66 : t037	=	100
+ 67 : param	_0
+ 68 : t038	=	call printStr, 1
+ 69 : param	_1
+ 70 : t039	=	call printStr, 1
+ 71 : t040	=	& err
+ 72 : param	t040
+ 73 : t041	=	call readInt, 1
+ 74 : n	=	t041
+ 75 : t042	=	t041
+ 76 : param	_2
+ 77 : t043	=	call printStr, 1
+ 78 : t044	=	0
+ 79 : i	=	t044
+ 80 : t045	=	t044
+ 81 : if  i <n	goto 87
+ 82 : goto 96
+ 83 : goto 96
+ 84 : t046	=	i
+ 85 : i	=	i + 1
+ 86 : goto 81
+ 87 : t047	=	0
+ 88 : t049	=	i * 4
+ 89 : t048	=	t047 + t049
+ 90 : t050	=	& err
+ 91 : param	t050
+ 92 : t051	=	call readInt, 1
+ 93 : p[t048]	=	t051
+ 94 : t052	=	t051
+ 95 : goto 84
+ 96 : t053	=	0
+ 97 : param	p
+ 98 : param	n
+ 99 : t054	=	call func, 2
+100 : ans	=	t054
+101 : t055	=	t054
+102 : param	_3
+103 : t056	=	call printStr, 1
+104 : param	ans
+105 : t057	=	call printInt, 1
+106 : param	_4
+107 : t058	=	call printStr, 1
+108 : t059	=	0
+109 : return	t059
+_________________________________________________________________________________
+Symbol table for the Program
+____________________________________________ Global ____________________________________________
+Offset = 0
+Start Quad Index = 0
+End Quad Index =  0
+Name	Value	var_type	size	Offset	Type
+
+printInt	null	func		0	-1	ptr-to-St( Global )int
+readInt	null	func		0	-1	ptr-to-St( Global )int
+printStr	null	func		0	-1	ptr-to-St( Global )int
+max	null	func		0	-1	ptr-to-St( max )int
+func	null	func		0	-1	ptr-to-St( func )int
+main	null	func		0	-1	ptr-to-St( main )int
+
+x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
+_________________________________________________________________________________
+____________________________________________ max ____________________________________________
+Offset = -8
+Start Quad Index = 0
+End Quad Index =  6
+Name	Value	var_type	size	Offset	Type
+
+retVal	null	return		4	0	int
+a	null	param		4	-8	int
+b	null	param		4	-4	int
+
+x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
+____________________________________________ func ____________________________________________
+Offset = -568
+Start Quad Index = 7
+End Quad Index =  63
+Name	Value	var_type	size	Offset	Type
+
+retVal	null	return		4	0	int
+p	null	param		8	-12	Array(-1,int)
+n	null	param		4	-4	int
+dp	null	local		400	-412	Array(100,int)
+t000	100	temp		4	-416	int
+t001	0	temp		4	-420	int
+t002	0	temp		4	-424	int
+t003	null	temp		4	-428	int
+t004	null	temp		4	-432	int
+t005	0	temp		4	-436	int
+t006	null	temp		4	-440	int
+i	null	local		4	-444	int
+j	null	local		4	-448	int
+t007	1	temp		4	-452	int
+t008	null	temp		4	-456	int
+t009	null	temp		4	-460	int
+cur	0	local		4	-464	int
+t010	0	temp		4	-468	int
+t011	0	temp		4	-472	int
+t012	null	temp		4	-476	int
+t013	null	temp		4	-480	int
+t014	0	temp		4	-484	int
+t015	null	temp		4	-488	int
+t016	null	temp		4	-492	int
+t017	null	temp		4	-496	int
+t018	0	temp		4	-500	int
+t019	null	temp		4	-504	int
+t020	1	temp		4	-508	int
+t021	null	temp		4	-512	int
+t022	null	temp		4	-516	int
+t023	null	temp		4	-520	int
+t024	null	temp		4	-524	int
+t025	null	temp		4	-528	int
+t026	null	temp		4	-532	int
+t027	null	temp		4	-536	int
+t028	0	temp		4	-540	int
+t029	null	temp		4	-544	int
+t030	null	temp		4	-548	int
+t031	null	temp		4	-552	int
+t032	0	temp		4	-556	int
+t033	null	temp		4	-560	int
+t034	null	temp		4	-564	int
+t035	null	temp		4	-568	int
+
+x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
+____________________________________________ main ____________________________________________
+Offset = -520
+Start Quad Index = 64
+End Quad Index =  109
+Name	Value	var_type	size	Offset	Type
+
+retVal	null	return		4	0	int
+err	1	local		4	-4	int
+t036	1	temp		4	-8	int
+p	null	local		400	-408	Array(100,int)
+t037	100	temp		4	-412	int
+i	null	local		4	-416	int
+n	null	local		4	-420	int
+ans	null	local		4	-424	int
+t038	null	temp		4	-428	int
+t039	null	temp		4	-432	int
+t040	null	temp		8	-440	ptr(int)
+t041	null	temp		4	-444	int
+t042	null	temp		4	-448	int
+t043	null	temp		4	-452	int
+t044	0	temp		4	-456	int
+t045	null	temp		4	-460	int
+t046	null	temp		4	-464	int
+t047	0	temp		4	-468	int
+t048	null	temp		4	-472	int
+t049	null	temp		4	-476	int
+t050	null	temp		8	-484	ptr(int)
+t051	null	temp		4	-488	int
+t052	null	temp		4	-492	int
+t053	0	temp		4	-496	int
+t054	null	temp		4	-500	int
+t055	null	temp		4	-504	int
+t056	null	temp		4	-508	int
+t057	null	temp		4	-512	int
+t058	null	temp		4	-516	int
+t059	0	temp		4	-520	int
+
+x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x

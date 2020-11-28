@@ -1,0 +1,104 @@
+_________________________________________________________________________________
+Generated Quads for the program
+  0 : t000	=	0
+  1 : if  a ==t000	goto 4
+  2 : goto 6
+  3 : goto 12
+  4 : return	b
+  5 : goto -1
+  6 : t001	=	b % a
+  7 : param	t001
+  8 : param	a
+  9 : t002	=	call HCF, 2
+ 10 : return	t002
+ 11 : goto -1
+ 12 : param	_0
+ 13 : t003	=	call printStr, 1
+ 14 : t004	=	1
+ 15 : err	=	t004
+ 16 : param	_1
+ 17 : t005	=	call printStr, 1
+ 18 : t006	=	& err
+ 19 : param	t006
+ 20 : t007	=	call readInt, 1
+ 21 : a	=	t007
+ 22 : t008	=	t007
+ 23 : param	_2
+ 24 : t009	=	call printStr, 1
+ 25 : t010	=	& err
+ 26 : param	t010
+ 27 : t011	=	call readInt, 1
+ 28 : b	=	t011
+ 29 : t012	=	t011
+ 30 : param	a
+ 31 : param	b
+ 32 : t013	=	call HCF, 2
+ 33 : ans	=	t013
+ 34 : t014	=	t013
+ 35 : param	_3
+ 36 : t015	=	call printStr, 1
+ 37 : param	ans
+ 38 : t016	=	call printInt, 1
+ 39 : param	_4
+ 40 : t017	=	call printStr, 1
+ 41 : t018	=	0
+ 42 : return	t018
+_________________________________________________________________________________
+Symbol table for the Program
+____________________________________________ Global ____________________________________________
+Offset = 0
+Start Quad Index = 0
+End Quad Index =  0
+Name	Value	var_type	size	Offset	Type
+
+printInt	null	func		0	-1	ptr-to-St( Global )int
+readInt	null	func		0	-1	ptr-to-St( Global )int
+printStr	null	func		0	-1	ptr-to-St( Global )int
+HCF	null	func		0	-1	ptr-to-St( HCF )int
+main	null	func		0	-1	ptr-to-St( main )int
+
+x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
+_________________________________________________________________________________
+____________________________________________ HCF ____________________________________________
+Offset = -20
+Start Quad Index = 0
+End Quad Index =  11
+Name	Value	var_type	size	Offset	Type
+
+retVal	null	return		4	0	int
+a	null	param		4	-8	int
+b	null	param		4	-4	int
+t000	0	temp		4	-12	int
+t001	null	temp		4	-16	int
+t002	null	temp		4	-20	int
+
+x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
+____________________________________________ main ____________________________________________
+Offset = -88
+Start Quad Index = 12
+End Quad Index =  42
+Name	Value	var_type	size	Offset	Type
+
+retVal	null	return		4	0	int
+a	null	local		4	-4	int
+b	null	local		4	-8	int
+ans	null	local		4	-12	int
+t003	null	temp		4	-16	int
+err	1	local		4	-20	int
+t004	1	temp		4	-24	int
+t005	null	temp		4	-28	int
+t006	null	temp		8	-36	ptr(int)
+t007	null	temp		4	-40	int
+t008	null	temp		4	-44	int
+t009	null	temp		4	-48	int
+t010	null	temp		8	-56	ptr(int)
+t011	null	temp		4	-60	int
+t012	null	temp		4	-64	int
+t013	null	temp		4	-68	int
+t014	null	temp		4	-72	int
+t015	null	temp		4	-76	int
+t016	null	temp		4	-80	int
+t017	null	temp		4	-84	int
+t018	0	temp		4	-88	int
+
+x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
